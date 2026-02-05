@@ -96,7 +96,7 @@ DATABASES = {
         'HOST': 'nyein.database.windows.net',
         'PORT': '1433',
         'OPTIONS': {
-            'driver': 'ODBC Driver 17 for SQL Server',
+            'driver': 'ODBC Driver 18 for SQL Server',
         },
     },
 }
@@ -154,7 +154,5 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # https://warehouse.python.org/project/whitenoise/
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-'OPTIONS': {
-    'driver': 'ODBC Driver 17 for SQL Server',
-    'extra_params': 'TrustServerCertificate=yes;', 
-}
+
+
