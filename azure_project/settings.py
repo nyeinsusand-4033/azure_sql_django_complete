@@ -96,7 +96,7 @@ DATABASES = {
         'HOST': 'nyein.database.windows.net',
         'PORT': '1433',
         'OPTIONS': {
-            'driver': 'ODBC Driver 18 for SQL Server',
+            'driver': 'ODBC Driver 17 for SQL Server',
         },
     },
 }
@@ -105,11 +105,11 @@ DATABASES = {
 import urllib.parse
 
 # MongoDB Configuration
-mongo_username = urllib.parse.quote_plus('bearlab')
-mongo_password = urllib.parse.quote_plus('P@ss1234')
+mongo_username = urllib.parse.quote_plus('nyeinsu')
+mongo_password = urllib.parse.quote_plus('NSS472000@')
 # MONGO_URI = 'mongodb://localhost:27017/'
-MONGO_URI = f'mongodb+srv://{mongo_username}:{mongo_password}@bearlab-mongodb.global.mongocluster.cosmos.azure.com/?tls=true&authMechanism=SCRAM-SHA-256&retrywrites=false&maxIdleTimeMS=120000'
-MONGO_DB_NAME = 'django_store_reviews'
+MONGO_URI = f'mongodb+srv://{mongo_username}:{mongo_password}@nyeinsusand.global.mongocluster.cosmos.azure.com/?tls=true&authMechanism=SCRAM-SHA-256&retrywrites=false&maxIdleTimeMS=120000'
+MONGO_DB_NAME = 'nyeinsusand'
 
 # Password validation
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators
@@ -153,3 +153,8 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # Simplified static file serving.
 # https://warehouse.python.org/project/whitenoise/
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+'OPTIONS': {
+    'driver': 'ODBC Driver 17 for SQL Server',
+    'extra_params': 'TrustServerCertificate=yes;', 
+}
