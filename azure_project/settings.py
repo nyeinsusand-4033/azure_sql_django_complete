@@ -106,7 +106,7 @@ import urllib.parse
 
 # MongoDB Configuration
 mongo_username = urllib.parse.quote_plus('nyeinsu')
-mongo_password = urllib.parse.quote_plus('Tla1234')
+mongo_password = urllib.parse.quote_plus('Tla12345')
 # MONGO_URI = 'mongodb://localhost:27017/'
 MONGO_URI = f'mongodb+srv://{mongo_username}:{mongo_password}@nyeinsusandi.global.mongocluster.cosmos.azure.com/?tls=true&authMechanism=SCRAM-SHA-256&retrywrites=false&maxIdleTimeMS=120000'
 MONGO_DB_NAME = 'nyeinsusandi'
